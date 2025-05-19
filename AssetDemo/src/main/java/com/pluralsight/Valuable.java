@@ -1,5 +1,5 @@
 package com.pluralsight;
 
-public interface ValueAble {
+public interface Valuable {
     double getValue();
 }

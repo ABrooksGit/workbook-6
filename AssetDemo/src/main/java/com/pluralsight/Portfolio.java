@@ -2,31 +2,47 @@ package com.pluralsight;
 
 import java.util.ArrayList;
 
+import java.util.List;
+
 public class Portfolio {
 
     private String name;
     private String owner;
-    private ArrayList<ValueAble> assets;
+    private List<Valuable> assets;
 
 
     public Portfolio(String name, String owner) {
         this.name = name;
         this.owner = owner;
-        this.assets = new ArrayList<ValueAble>();
+        this.assets = new ArrayList<Valuable>();
     }
 
 
-    public void add(ValueAble valueableObject){
-        this.assets.add(valueableObject);
+    public void add(Valuable valueAbleObject){
+        this.assets.add(valueAbleObject);
     }
 
 
     public double getValue(){
         double total = 0;
-        for(ValueAble va : assets){
+        for(Valuable va : assets){
 
             total += va.getValue();
         }
         return total;
+    }
+
+
+    public Valuable getMostValuable(){
+
+
+
+
+    }
+
+
+    public Valuable getLeastValuable(){
+
+
     }
 }
