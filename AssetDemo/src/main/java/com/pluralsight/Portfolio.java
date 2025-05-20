@@ -2,6 +2,8 @@ package com.pluralsight;
 
 import java.util.ArrayList;
 
+import java.util.Collections;
+
 import java.util.List;
 
 public class Portfolio {
@@ -34,15 +36,17 @@ public class Portfolio {
 
 
     public Valuable getMostValuable(){
-
-
-
+//
+//        Collections.max(assets);
+    return null;
 
     }
 
 
     public Valuable getLeastValuable(){
 
+
+        return null;
 
     }
 }
